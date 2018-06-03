@@ -92,25 +92,18 @@ static unsigned char tm1637GetAck(void)
 {
 	unsigned char bAck = 1;
 
-	// With the sysfs GPIO driver, ArmbianIO is not prepared to reverse
-	// the direction of an existing GPIO pin
-	// We can safely disable this code on Linux
-	//
 	// read ack
 	// clock to low
 	GPIO_Set_Pin_Low(bClockPort, bClockPin);
 	// data as input
-	// AIOAddGPIO(bDataPin, GPIO_IN); 
+	
 	usleep(CLOCK_DELAY);
 
-	// bAck = AIOReadGPIO(bDataPin);
-    // clock high
+	// clock high
 	GPIO_Set_Pin_High(bClockPort, bClockPin);
 	usleep(CLOCK_DELAY);
 	// clock to low
 	GPIO_Set_Pin_Low(bClockPort, bClockPin);
-
-	// AIOAddGPIO(bDataPin, GPIO_OUT);
 	return bAck;
 }
 

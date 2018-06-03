@@ -90,7 +90,7 @@ void GPIO_Config_Pin(gpio_port_t port, gpio_pin_t pins,
 /// <param name="port">
 /// The port to be configured.
 /// </param>
-/// <param name="port">
+/// <param name="pins">
 /// Pin(s) to be configured. This can be a single pin or a group of pins
 /// For example: Send (GPIO_PIN_0 | GPIO_PIN_1) to set pin 0 and 1 together.
 /// </param>
@@ -102,7 +102,7 @@ void GPIO_Set_Pin_High(gpio_port_t port, gpio_pin_t pins);
 /// <param name="port">
 /// The port to be configured.
 /// </param>
-/// <param name="port">
+/// <param name="pins">
 /// Pin(s) to be configured. This can be a single pin or a group of pins
 /// For example: Send (GPIO_PIN_0 | GPIO_PIN_1) to set pin 0 and 1 together.
 /// </param>
@@ -114,7 +114,7 @@ void GPIO_Set_Pin_Low(gpio_port_t port, gpio_pin_t pins);
 /// <param name="port">
 /// The port to be toggled.
 /// </param>
-/// <param name="port">
+/// <param name="pins">
 /// Pin(s) to be configured. This can be a single pin or a group of pins
 /// For example: Send (GPIO_PIN_0 | GPIO_PIN_1) to set pin 0 and 1 together.
 /// </param>
