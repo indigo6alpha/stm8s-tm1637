@@ -26,4 +26,5 @@ Thanks
 ---
 
 **vdudouyt** for the [stm8flash](https://github.com/vdudouyt/stm8flash) tool
+
 **bitbank2** for the original [tm1637](https://github.com/bitbank2/tm1637) C library
