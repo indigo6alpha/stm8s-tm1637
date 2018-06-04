@@ -1,5 +1,4 @@
 // indigo6alpha's TM1637 library for STM8SF103F3 MCU
-// Copyright (c) 2018 BitBank Software, Inc.
 // Project started 3/17/2018
 // written by indigo6alpha (indigosixalpha164@gmail.com)
 //
